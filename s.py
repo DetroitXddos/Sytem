@@ -7,10 +7,10 @@ import datetime
 import os
 
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7444294575:AAERYqij8A9kM0EqCb9JDSzfNGXKOdsTtwo')
+bot = telebot.TeleBot('7362919083:AAF8QkLpiYfxBUS5AuqWHW2Y7eZw_EAdm-I')
 
 # Admin user IDs
-admin_id = ["7424412289","2120303141"]
+admin_id = ["6699712247"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -251,7 +251,7 @@ def handle_bgmi(message):
         else:
             response = "/attack <host> <port> <duration>"  # Updated command syntax
     else:
-        response = "🚫 Unauthorized Access!🚫Please buy access :- @adarshsinghh05711"
+        response = "🚫 Unauthorized Access!🚫Please buy access :- @detroit008"
 
     bot.reply_to(message, response)
 
@@ -286,7 +286,7 @@ def show_help(message):
 💥 /mylogs : To Check Your Recents Attacks.
 💥 /plan : Checkout Our Botnet Rates.
 
-BUY ACCESS -> @adrshsinghh05711
+BUY ACCESS -> @detroit008
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -308,7 +308,7 @@ def welcome_start(message):
 def welcome_rules(message):
     user_name = message.from_user.first_name
     response = f'''
-1. ANY PROBLEM DM HERE -> @adarshsinghh05711'''
+1. ANY PROBLEM DM HERE -> @detroit008'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['plan'])
@@ -324,7 +324,7 @@ def welcome_plan(message):
 𝟑𝟎 𝐃𝐀𝐘 -> 𝟗𝟎𝟎
 𝟔𝟎 𝐃𝐀𝐘 -> 𝟏𝟕𝟎𝟎
 
-𝐃𝐌 𝐓𝐎 𝐁𝐔𝐘 -> @adarshsinghh05711
+𝐃𝐌 𝐓𝐎 𝐁𝐔𝐘 -> @detroir008
 '''
     bot.reply_to(message, response)
 
